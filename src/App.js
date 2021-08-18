@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Auth from "./components/Auth";
+import Home from "./components/Home";
+import Landing from "./components/Landing";
+import Navbar from "./components/Navbar";
+import styled from "styled-components";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+
+const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <Router>
+        <Navbar/>
+        <Switch>
+          <Route path='/' exact>
+            <Landing/>
+          </Route>
+          <Route path='/home' exact>
+            <Home/>
+          </Route>
+          <Route path='/auth' exact>
+            <Auth/>
+          </Route>
+        </Switch>
+      </Router>
+    </AppContainer>
   );
 }
 

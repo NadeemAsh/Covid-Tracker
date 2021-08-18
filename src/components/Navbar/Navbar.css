@@ -1,0 +1,71 @@
+.nav-container {
+  width: 100%;
+  max-width: 80%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.covid-logo {
+  height: 44px;
+  margin-left: 12px;
+}
+
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navlist-item {
+  margin: 0 12px;
+}
+
+.navlist-item h5 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.text h5{
+  color: #006d3a;
+}
+
+.button {
+  padding: 9px 22px;
+  border: 2px solid #ff383d;
+  border-radius: 22px;
+  transition: all 0.3s ease-in-out;
+  color: #ff383d;
+}
+
+.button:hover{
+    color: white;
+    background-color: #ff383d;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-container {
+    max-width: 100%;
+  }
+  .covid-logo {
+    height: 34px;
+    margin-left: 12px;
+  }
+  .navlist-item h5 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .button {
+    padding: 6px 17px;
+    border: 1px solid #ff383d;
+    border-radius: 22px;
+    transition: all 0.3s ease-in-out;
+  }
+}
