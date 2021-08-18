@@ -48,6 +48,7 @@
 .covid-text p {
   padding: 2px 0;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .cases-button {
@@ -59,7 +60,6 @@
   color: white;
   background-color: #ff383d;
   cursor: pointer;
-  margin: 6px 0;
 }
 
 .link-color{

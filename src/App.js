@@ -1,10 +1,15 @@
 import "./App.css";
-import Auth from "./components/Auth";
-import Home from "./components/Home";
-import Landing from "./components/Landing";
-import Navbar from "./components/Navbar";
+import Auth from "./components/Auth/Auth";
+import Home from "./components/Home/Home";
+import Landing from "./components/Landing/Landing";
+import Navbar from "./components/Navbar/Navbar";
 import styled from "styled-components";
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -19,21 +24,22 @@ function App() {
   return (
     <AppContainer>
       <Router>
-        <Navbar/>
+        <Navbar />
         <Switch>
-          <Route path='/' exact>
-            <Landing/>
+          <Route path="/" exact>
+            <Landing />
           </Route>
-          <Route path='/home' exact>
-            <Home/>
+          <Route path="/home">
+            <Home />
           </Route>
-          <Route path='/auth' exact>
-            <Auth/>
+          <Route path="/auth">
+            <Auth />
           </Route>
         </Switch>
       </Router>
     </AppContainer>
   );
 }
+
 
 export default App;

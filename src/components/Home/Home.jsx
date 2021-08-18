@@ -1,13 +1,13 @@
 import React from "react";
-import './index.css';
+import './Home.css';
 
-const index = () => {
+const Home = () => {
   return(
     <div className="container">
-      Auth Component
+      Home Component
     </div>
   );
 };
 
 
-export default index;
+export default Home;

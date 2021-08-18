@@ -12,7 +12,7 @@
   margin-left: 12px;
 }
 
-.flex-wrapper {
+.flex-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,7 @@
 
 .navlist-item h5 {
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .text h5{
@@ -32,8 +32,8 @@
 }
 
 .button {
-  padding: 9px 22px;
-  border: 2px solid #ff383d;
+  padding: 5px 22px;
+  border: 1px solid #ff383d;
   border-radius: 22px;
   transition: all 0.3s ease-in-out;
   color: #ff383d;
@@ -63,7 +63,7 @@
     font-weight: 700;
   }
   .button {
-    padding: 6px 17px;
+    padding: 5px 17px;
     border: 1px solid #ff383d;
     border-radius: 22px;
     transition: all 0.3s ease-in-out;

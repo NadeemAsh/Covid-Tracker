@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "./Navbar.css";
 
-const index = () => {
+const Navbar = () => {
   return (
     <div className="nav-container">
       <Link to="/">
@@ -13,7 +13,7 @@ const index = () => {
           className="covid-logo"
         />
       </Link>
-      <ul className="flex-wrapper">
+      <ul className="flex-wrap">
         <li className="navlist-item text">
           <Link to="/home">
             <h5>Cases</h5>
@@ -29,4 +29,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Navbar;
